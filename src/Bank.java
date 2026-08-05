@@ -12,6 +12,7 @@ public class Bank {
             System.out.println("1. Check Balance");
             System.out.println("2. Money Deposit");
             System.out.println("3. Withdraw Money");
+            System.out.println("4. Create Account");
             System.out.println("9. Exit");
 
             System.out.print("Enter your choice: ");
@@ -27,6 +28,9 @@ public class Bank {
                     break;
                 case 3:
                     balance=Withdraw.withdrawMoney(balance);
+                    break;
+                case 4:
+                    CreateAccount.createNewAccount();
                     break;
                 case 9:
                     System.out.println("Thank you for using ABC Bank!");
