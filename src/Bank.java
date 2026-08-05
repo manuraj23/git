@@ -19,11 +19,12 @@ public class Bank {
             System.out.println();
 
             switch(option){
+                case 1:
+                    break;
                 case 2:
+                    balance = Deposit.deposit(balance);
                     break;
                 case 3:
-                    break;
-                case 4:
                     break;
                 case 9:
                     System.out.println("Thank you for using ABC Bank!");
