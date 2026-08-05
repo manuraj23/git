@@ -26,6 +26,7 @@ public class Bank {
                     balance = Deposit.deposit(balance);
                     break;
                 case 3:
+                    Withdraw.withdrawMoney(balance);
                     break;
                 case 9:
                     System.out.println("Thank you for using ABC Bank!");
