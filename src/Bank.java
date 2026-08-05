@@ -12,7 +12,6 @@ public class Bank {
             System.out.println("1. Check Balance");
             System.out.println("2. Money Deposit");
             System.out.println("3. Withdraw Money");
-            System.out.println("4. Create Account");
             System.out.println("9. Exit");
 
             System.out.print("Enter your choice: ");
@@ -21,17 +20,19 @@ public class Bank {
 
             switch(option){
                 case 1:
-                    Balance.checkBalance(balance);
                     break;
                 case 2:
                     balance = Deposit.deposit(balance);
                     break;
                 case 3:
-                    balance=Withdraw.withdrawMoney(balance);
+                     CreateAccount.createNewAccount();
                     break;
-                case 4:
-                    CreateAccount.createNewAccount();
-                    break;
+                  case 5:
+                   
+                        // New: Calculates FD returns dynamically
+                        FDCalculator.calculateFD();
+                        break;
+                    
                 case 9:
                     System.out.println("Thank you for using ABC Bank!");
                     break;
