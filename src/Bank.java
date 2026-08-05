@@ -26,11 +26,13 @@ public class Bank {
 
             switch(option){
                 case 1:
+                    Balance.checkBalance(balance);
                     break;
                 case 2:
                     balance = Deposit.deposit(balance);
                     break;
                 case 3:
+                    balance=Withdraw.withdrawMoney(balance);
                     break;
                     case 7:
                         // PasswordManager ko current password bheja aur naya password receive kiya
