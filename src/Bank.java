@@ -6,12 +6,18 @@ public class Bank {
         System.out.println("Welcome to ABC bank");
         int balance = 0; 
         int option=1;
+
+         // Password variable ko main memory me rakha hai, bina CreateAccount link kiye
+        String accountPassword = "1234Password"; 
+
+
         while(option != 9){
             System.out.println("\n--- MAIN MENU ---");
             System.out.println("Enter your choice");
             System.out.println("1. Check Balance");
             System.out.println("2. Money Deposit");
             System.out.println("3. Withdraw Money");
+            System.out.println("7. Change Password");
             System.out.println("9. Exit");
 
             System.out.print("Enter your choice: ");
@@ -26,6 +32,10 @@ public class Bank {
                     break;
                 case 3:
                     break;
+                    case 7:
+                        // PasswordManager ko current password bheja aur naya password receive kiya
+                        accountPassword = PasswordManager.updatePassword(accountPassword);
+                        break;
                 case 9:
                     System.out.println("Thank you for using ABC Bank!");
                     break;
