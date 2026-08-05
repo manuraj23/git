@@ -20,6 +20,7 @@ public class Bank {
 
             switch(option){
                 case 1:
+                    Balance.checkBalance(balance);
                     break;
                 case 2:
                     balance = Deposit.deposit(balance);
